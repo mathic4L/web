@@ -1,0 +1,85 @@
+/*селекторов псевдоклассов,
+селекторов дочерних элементов,
+селекторов псевдоэлементов,
+селекторов классов
+
+а также такие свойства стилей CSS,
+ как наследование и каскадирование.*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*__________________________________________________*/
+
+body {
+    font-family: Aeroport;
+    display: flex;
+    flex-direction: column;
+    padding: 0 312px 0 312px;
+    margin: 0;
+}
+
+/*__________________________________________________*/
+
+header.header {
+    font-family: fantasy;
+    font-size: large;
+    margin-bottom: 32px;
+    color: blue;
+}
+
+header::after {
+    content: ".";
+}
+
+/*__________________________________________________*/
+form {
+    background-color: lightgrey;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form > * {
+    margin-bottom: 32px;
+    flex-grow: 1;
+}
+
+form :last-child {
+    margin-bottom: 0;
+    align-self: flex-end;
+}
+
+form input[type="text"]::placeholder {
+    color: cornflowerblue;
+}
+
+form input[type="text"]:hover {
+    border-color: deeppink;
+}
+
+form > input[type="submit"] {
+    width: 33%;
+    height: 48px;
+}
+
+/*__________________________________________________*/
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/*__________________________________________________*/
