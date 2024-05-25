@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+body > * {
+    position: absolute;
+}
+
+#screen {
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper {
+    position: absolute;
+    z-index: 3;
+    width: 348px;
+    padding: 16px;
+    margin: 16px;
+    border: black solid 1px;
+
+}
+
+/*_____________________________________________________________*/
+#drawing {
+    display: flex;
+}
+
+#outer2, #outer1 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+#outer2 {
+    z-index: 2;
+}
+
+#outer1 {
+    border-radius: 100%;
+    background-color: black;
+}
+
+#l, #r {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+#l {
+    background-color: white;
+}
+
+#l > *, #r > * {
+    width: 100%;
+    height: 50%;
+}
+
+#rect {
+    height: 25%;
+    background-color: black;
+}
+
+#empty {
+    background-color: white;
+}
+
+#tr {
+    width: 0;
+    height: 0;
+    border-top-style: solid;
+    border-top-color: #000000;
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+
+/*_____________________________________________________________*/
+#dot {
+    width: 8px;
+    height: 8px;
+    z-index: 4;
+    background-color: aqua;
+    position: relative;
+}
