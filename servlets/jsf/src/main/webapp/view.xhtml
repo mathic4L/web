@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:form >
+
+    <h:column>
+        <h2>err:</h2>
+        <h:messages style="color: red"/>
+    </h:column>
+
+    <h:inputText id="x" value="#{calc.x}">
+        <f:converter converterId="intConverter"/>
+    </h:inputText> <br/>
+    <h:message for="x" style="color: red"/><br/>
+
+    <h:inputText id="y" value="#{calc.y}">
+        <f:converter converterId="intConverter"/>
+    </h:inputText><br/>
+    <h:message for="y" style="color: red"/><br/>
+
+    <h:inputText id="op" value="#{calc.operationType}"/><br/>
+    <h:message for="op" style="color: red"/><br/>
+
+    <h:commandButton value="calc" action="#{calc.calculate}"/><br/>
+
+    <h2>res:</h2>
+    <h:outputText value="${calc.res}" rendered="${calc.resReady}"/><br/>
+
+</h:form>
+
+</html>

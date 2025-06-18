@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="focusXml" class="org.example.core.pojos.MyCar">
+        <property name="manufacturer" value="ford"/>
+        <property name="model" value="focus"/>
+        <property name="color" value="blue"/>
+    </bean>
+
+    <bean id="mustangXml" class="org.example.core.pojos.MyCar">
+        <property name="manufacturer" value="ford"/>
+        <property name="model" value="mustang"/>
+        <property name="color" value="red"/>
+    </bean>
+</beans>
