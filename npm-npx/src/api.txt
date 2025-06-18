@@ -1,0 +1,2 @@
+npm install <package> раньше скачивала, а сейчас эквивалента install --save
+npm install --save <package> скачивает и добавляет в package.json/dependencies

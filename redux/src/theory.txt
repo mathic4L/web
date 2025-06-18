@@ -1,0 +1,13 @@
+API из 9 функций:
+● createStore
+● combineReducers
+● bindActionCreators
+● applyMiddleware
+● compose
+● Store
+○ getState()
+○ dispatch(action)
+○ subscribe(listener)
+○ replaceReducer(nextReducer)
+
+createApi ?
