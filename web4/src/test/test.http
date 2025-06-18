@@ -1,0 +1,18 @@
+### GET request to example server
+GET http://localhost:8080/calcs
+Authorization: Basic dXNlcjM6dXNlcjM=
+#Authorization: Basic dXNlcjE6dXNlcjE=
+
+###
+GET http://localhost:8080/calcs
+#Authorization: Basic dXNlcjM6dXNlcjM=
+Authorization: Basic dXNlcjE6dXNlcjE=
+Content-Type: application/json
+
+{
+"x": 1,
+"y": 1,
+"r": 1
+}
+
+####
